@@ -1,0 +1,149 @@
+*{margin: 0; padding: 0;} 
+
+.image-items {
+    width: 25%;
+    padding: 5px;
+}
+
+.item-container {
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+img {
+    width: 100%;
+}
+/* //Search */
+.container-search {
+    /* margin: 20px auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("./images/img\(11\).jpg") no-repeat;
+    height: 100vh;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.container-search input {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: blueviolet;
+    width: 100%;
+    height: 100%;
+}
+
+.container-search .search {
+    width: 50%;
+}
+
+.container-search form {
+    width: 50%;
+    height: 50px;
+    position: relative;
+    border-radius: 10px;
+}
+
+
+.trending-search {
+    display: flex;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.trending-search span:after {
+    content: ", ";
+    padding-right: 5px;
+}
+button.button-search {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fb962f;
+    border: 1px;
+}
+.navigation {
+    font-size: 1.1vw;
+}
+.container-search h1 {
+    font-size: 4vw;
+}
+
+.container-search h3 {
+    font-size: 2vw;
+    color: #504dbb;
+}
+
+
+/* page number */
+.page {
+    margin: 20px auto;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* padding: 10px; */
+}
+.page .item {
+    /* float: left; */
+    /* list-style: none; */
+    height: 25px;
+    width: auto;
+
+    margin: 4px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 5px;
+    line-height: 1px;
+    font-size: 1.2vw;
+    cursor: pointer;
+
+}
+.page-number {
+    pointer-events: none;
+}
+.page-number:first-child {
+    color: #ec8418;
+}
+.page .item:hover {
+    background: #ec8418;
+}
+
+
+.result {
+    display: flex;
+    flex-direction: column;
+}
+.page .item a {
+    text-decoration: none;
+    cursor: pointer;
+    pointer-events: auto;
+}
+.page ul {
+    /* align-items:  center; */
+    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* page number */
+
+@media(max-width: 700px ){
+    .container-search form{
+        width: 80%;
+    }
+    .page .item {
+    font-size: 2vw;
+    }
+    .navigation {
+        font-size: 2vw;
+    }
+}
+.active {
+    background: #ec8418;
+}
